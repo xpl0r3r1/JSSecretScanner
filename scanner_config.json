@@ -1,0 +1,28 @@
+{
+  "scan_settings": {
+    "max_js_files": 30,
+    "timeout": 15,
+    "max_workers": 6,
+    "save_format": "all"
+  },
+  "filter_settings": {
+    "exclude_domains": [
+      "google-analytics.com",
+      "googletagmanager.com",
+      "facebook.net",
+      "doubleclick.net"
+    ],
+    "include_categories": [
+      "secrets",
+      "jwt_tokens",
+      "api_endpoints",
+      "sensitive_paths",
+      "database_urls"
+    ]
+  },
+  "output_settings": {
+    "create_html_report": true,
+    "create_directory": true,
+    "filename_prefix": "scan_"
+  }
+}
